@@ -830,3 +830,201 @@ h2 {
 }
 
 /*<---Interview(END)--->*/
+/*<---Catalog(START)--->*/
+.catalog-wrapper {
+  margin-top: 240px;
+  position: relative;
+}
+
+.catalog-wrapper .bg-text {
+  color: #608199;
+  opacity: 0.1;
+  top: -30px;
+  left: 107px;
+}
+
+.catalog {
+  max-width: 1208px;
+  padding: 136px 0 0 88px;
+  background-color: var(--dark-blue);
+}
+
+.catalog h2 {
+  color: var(--bs-white);
+}
+
+.catalog-photos {
+  display: flex;
+  margin-top: 32px;
+}
+
+.catalog-photos-item {
+  width: 33.33%;
+  height: 492px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  color: var(--bs-white);
+  padding: 0 40px 32px 40px;
+}
+
+.catalog-photos-item-title {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.catalog-photos-item-desc {
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--bs-white);
+  min-height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.catalog-photos-item.item-1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.51%, #000000 100%),
+  url("../img/catalog/photos/1.png") 0 0 / cover no-repeat;
+}
+
+.catalog-photos-item.item-2 {
+  background: linear-gradient(180deg, rgba(113, 69, 63, 0) 47.42%, #ad9c8f 100%),
+  url("../img/catalog/photos/2.png") 0 0 / cover no-repeat;
+}
+
+.catalog-photos-item.item-3 {
+  background: linear-gradient(180deg, rgba(161, 171, 173, 0) 50%, #696c6b 100%),
+  url("../img/catalog/photos/3.png") 0 0 / cover no-repeat;
+}
+
+.catalog-info {
+  display: flex;
+}
+
+.catalog-cards {
+  display: flex;
+  padding: 22px 25px;
+  background-color: var(--bs-white);
+  width: 66.66%;
+  gap: 5px;
+  overflow-y: hidden;
+}
+
+.catalog-card {
+  max-width: 170px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.catalog-card:hover {
+  background-color: rgba(227, 246, 245, 0.3);
+}
+
+.catalog-card-photo {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.catalog-card-title,
+.catalog-card-price {
+  font-size: 16px;
+  color: var(--dark-blue);
+}
+
+.catalog-card-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.catalog-card-price {
+  font-style: italic;
+}
+
+.catalog-info-calc {
+  width: 33.33%;
+  padding: 40px 40px 56px 40px;
+  background-color: var(--dark-green);
+  font-size: 16px;
+  color: var(--bs-white);
+}
+
+.catalog-info-calc-title {
+  font-weight: 700;
+}
+
+.catalog-info-calc-desc {
+  line-height: 21px;
+  margin-top: 8px;
+}
+
+.catalog-info-calc .btn {
+  background-color: var(--bs-white);
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+  .catalog-wrapper .bg-text {
+    font-size: 200px;
+    top: -40px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .catalog-wrapper {
+    margin-top: 80px;
+  }
+
+  .catalog {
+    padding: 50px 0 0 0;
+  }
+
+  .catalog h2 {
+    padding: 0 20px;
+  }
+
+  .catalog .container {
+    padding: 0;
+  }
+
+  .catalog-wrapper .bg-text {
+    top: -30px;
+    font-size: 100px;
+    left: calc(50% - 10rem);
+  }
+
+  .catalog-photos {
+    flex-direction: column;
+  }
+
+  .catalog-photos-item {
+    width: 100%;
+  }
+
+  .catalog-photos-item-desc {
+    display: none;
+  }
+
+  .catalog-info {
+    flex-direction: column;
+  }
+
+  .catalog-cards {
+    width: 100%;
+  }
+
+  .catalog-info-calc {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*<---Catalog(END)--->*/
