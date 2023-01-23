@@ -76,7 +76,7 @@ body {
 }
 @media screen and (max-width: 700px) {
   .container {
-    padding: 20px;
+    padding: 0 20px;
   }
 }
 
@@ -411,3 +411,124 @@ h2 {
 }
 
 /*<---FirstScreen(END)--->*/
+/*<---Popular(Start)--->*/
+
+.popular-wrapper {
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.popular {
+  background-color: var(--dark-green);
+  height: 100%;
+  margin-right: 160px;
+  padding: 190px 0 0 88px;
+}
+
+.popular .bg-text {
+  top: 110px;
+  right: 55px;
+}
+
+.popular-gallery {
+  display: grid;
+  height: 480px;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  color: var(--dark-blue);
+  font-family: "Cormorant Infant", serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.popular-gallery-1,
+.popular-gallery-2,
+.popular-gallery-3,
+.popular-gallery-4 {
+  cursor: pointer;
+  padding: 40px 0 0 40px;
+}
+
+.popular-gallery-1:hover,
+.popular-gallery-2:hover,
+.popular-gallery-3:hover,
+.popular-gallery-4:hover {
+  height: calc(100% - 12px);
+}
+
+.popular-gallery-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: url("../img/popular/1.png") 0 0 / cover no-repeat;
+}
+
+.popular-gallery-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: url("../img/popular/2.png") 0 0 / cover no-repeat;
+}
+
+.popular-gallery-3 {
+  background: url("../img/popular/3.png") 0 0 / cover no-repeat;
+}
+
+.popular-gallery-4 {
+  background: url("../img/popular/4.png") 0 0 / cover no-repeat;
+  color: var(--bs-white);
+}
+
+@media screen and (max-width: 1340px) {
+  .popular .bg-text {
+    font-size: 200px;
+    top: 120px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .popular .bg-text {
+    top: 130px;
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popular {
+    padding: 100px 0 0 0;
+    margin: 0;
+  }
+  .popular-wrapper {
+    padding-bottom: 48px;
+  }
+  .popular .bg-text {
+    top: 40px;
+    font-size: 100px;
+    right: calc(50% - 10rem);
+  }
+
+  .popular-gallery {
+    height: inherit;
+    grid-template: repeat(4, 150px) / repeat(1, 1fr);
+  }
+  .popular-gallery-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .popular-gallery-2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .popular-gallery-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .popular-gallery-4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+/*<---Popular(END)--->*/
