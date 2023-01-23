@@ -66,3 +66,28 @@ let bestSlider = new Swiper(".best-slider", {
     },
   },
 });
+let servicesSlider = new Swiper(".services-slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  lazy: true,
+  pagination: {
+    el: ".services-slider-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".services-slider-next",
+    prevEl: ".services-slider-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 2,
+    },
+    1040: {
+      slidesPerView: 3,
+    },
+  },
+});

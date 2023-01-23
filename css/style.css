@@ -1028,3 +1028,74 @@ h2 {
 }
 
 /*<---Catalog(END)--->*/
+/*<---Services(START)--->*/
+.services {
+  margin-top: 250px;
+  color: var(--dark-blue);
+}
+
+.services-slider {
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+
+.services .bg-text {
+  top: -60px;
+  right: -60px;
+  color: var(--dark-blue);
+}
+
+.services-card {
+  width: 350px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.services-card:hover {
+  background-color: rgba(227, 246, 245, 0.3);
+}
+
+.services-card-photo {
+  width: 350px;
+}
+
+.services-card-title {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 32px 0 15px 0;
+}
+
+.services-card-desc {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.services-slider-control {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+.services-info {
+  font-size: 16px;
+}
+
+.services-info .btn {
+  border: 1px solid var(--dark-blue);
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .services .bg-text {
+    top: -20px;
+    right: 30px;
+    font-size: 100px;
+  }
+
+  .services {
+    margin-top: 48px;
+  }
+}
+
+/*<---Services(END)--->*/
