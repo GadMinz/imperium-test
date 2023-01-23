@@ -1099,3 +1099,99 @@ h2 {
 }
 
 /*<---Services(END)--->*/
+/*<---Specialist(START)--->*/
+.specialist {
+  background-color: var(--dark-blue);
+  margin: 130px 0 0 160px;
+}
+
+.specialist .container {
+  display: flex;
+  margin: 0;
+}
+
+.specialist-item {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 590px;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.specialist-item:hover .darkness {
+  opacity: 0.6;
+}
+
+.specialist-item-wrapper {
+  max-width: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-white);
+  height: 590px;
+  text-align: center;
+  z-index: 1;
+}
+
+.specialist-item.item-1 {
+  background: url("../img/specialist/1.png") 0 0 / cover no-repeat;
+}
+
+.specialist-item.item-2 {
+  background: url("../img/specialist/2.png") 0 0 / cover no-repeat;
+}
+
+.specialist-title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 38px;
+}
+
+.specialist-desc {
+  margin: 24px 0 40px 0;
+  min-height: 4rem;
+}
+
+.specialist-item .btn {
+  color: var(--bs-white);
+  border: 1px solid var(--bs-white);
+}
+
+.darkness {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.4;
+  z-index: 0;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+  .specialist-item {
+    width: 100%;
+    cursor: pointer;
+    height: inherit;
+  }
+
+  .specialist .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .specialist {
+    background-color: var(--dark-blue);
+    margin: 65px 0 0 0;
+    padding-bottom: 48px;
+  }
+}
+
+/*<---Specialist(END)--->*/
+
