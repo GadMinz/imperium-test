@@ -646,3 +646,187 @@ h2 {
 }
 
 /*<---Best(END)--->*/
+/*<---Interview(START)--->*/
+.interview .container {
+  background-color: #e3f6f5;
+  padding: 56px;
+  color: var(--dark-blue);
+}
+
+.interview fieldset {
+  border: 1px solid var(--dark-green);
+  padding: 56px 100px;
+}
+
+.interview legend {
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 30px;
+  color: var(--dark-green);
+}
+
+.interview-title {
+  font-size: 32px;
+}
+
+.interview-title,
+.interview-progress-item {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.interview-progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interview-progress {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin: 15px 0 50px 0;
+}
+
+.interview-progress-item {
+  font-size: 12px;
+  color: var(--dark-green);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-green);
+  line-height: 14px;
+}
+
+.interview-progress-item.active {
+  background-color: var(--dark-green);
+  color: var(--bs-white);
+}
+
+.interview-progress-line {
+  position: absolute;
+}
+
+.interview-progress-line:before,
+.interview-progress-line:after {
+  border-bottom: 1px solid var(--dark-green);
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 1px;
+  top: 50%;
+  right: 11px;
+}
+
+.interview-progress-line:after {
+  left: 11px;
+}
+
+.interview-questions {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  font-size: 16px;
+  line-height: 21px;
+  display: none;
+}
+
+.interview-questions li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.interview-questions.active {
+  display: block;
+}
+
+.interview-questions input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
+
+.interview-questions label {
+  margin-left: 15px;
+}
+
+.interview-questions input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--dark-green);
+  background-color: var(--bs-white);
+}
+
+.interview-questions input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid var(--dark-green);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.interview-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.interview-btn button {
+  background-color: var(--bs-white);
+  color: var(--dark-blue);
+}
+
+.interview-btn-done {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .interview .container {
+    padding: 48px 20px;
+  }
+
+  .interview fieldset {
+    border: 1px solid var(--dark-green);
+    padding: 40px 24px;
+  }
+
+  .interview-title {
+    display: none;
+  }
+
+  .interview-progress {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin: 0 0 30px 0;
+  }
+
+  .interview-questions {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    font-size: 16px;
+    line-height: 21px;
+    display: none;
+  }
+}
+
+/*<---Interview(END)--->*/

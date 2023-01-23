@@ -12,6 +12,32 @@ $(".navigation").click(() => {
   event.stopPropagation();
 });
 
+let interviewStep = 0;
+const interviewSteps = $(".interview-questions").toArray();
+const interviewProgress = $(".interview-progress-item").toArray();
+const interviewNextBtn = $(".interview-btn-next");
+const interviewDoneBtn = $(".interview-btn-done");
+
+interviewNextBtn.click((e) => {
+  e.preventDefault();
+  interviewStep++;
+  updateFormStep();
+});
+interviewDoneBtn.click((e) => {
+  e.preventDefault();
+  alert("Отправлено");
+});
+
+function updateFormStep() {
+  $(interviewSteps[interviewStep]).addClass("active");
+  $(interviewProgress[interviewStep]).addClass("active");
+  $(interviewSteps[interviewStep - 1]).removeClass("active");
+  if (interviewStep === 2) {
+    interviewNextBtn.hide();
+    interviewDoneBtn.show();
+  }
+}
+
 let bestSlider = new Swiper(".best-slider", {
   slidesPerView: 4,
   spaceBetween: 32,
