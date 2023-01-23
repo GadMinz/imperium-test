@@ -74,6 +74,7 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 0 20px;
@@ -386,6 +387,7 @@ h2 {
   .first {
     margin-right: 0;
   }
+
   .first-title {
     font-size: 42px;
     line-height: 42px;
@@ -405,6 +407,7 @@ h2 {
     width: 30px;
     height: 30px;
   }
+
   .lock .btn-cart {
     display: none;
   }
@@ -498,9 +501,11 @@ h2 {
     padding: 100px 0 0 0;
     margin: 0;
   }
+
   .popular-wrapper {
     padding-bottom: 48px;
   }
+
   .popular .bg-text {
     top: 40px;
     font-size: 100px;
@@ -511,20 +516,24 @@ h2 {
     height: inherit;
     grid-template: repeat(4, 150px) / repeat(1, 1fr);
   }
+
   .popular-gallery-1 {
     grid-column-start: 1;
     grid-column-end: 1;
   }
+
   .popular-gallery-2 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
   }
+
   .popular-gallery-3 {
     grid-column-start: 1;
     grid-column-end: 1;
   }
+
   .popular-gallery-4 {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -532,3 +541,108 @@ h2 {
 }
 
 /*<---Popular(END)--->*/
+/*<---Best(START)--->*/
+.best {
+  margin-top: 130px;
+  color: var(--dark-blue);
+  margin-bottom: 130px;
+}
+
+.best-card {
+  padding: 16px;
+  height: 530px;
+  width: 256px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.best-card:hover {
+  background-color: rgba(227, 246, 245, 0.3);
+}
+
+.best-card-photo {
+  border: 1px solid #000000;
+  margin-bottom: 24px;
+}
+
+.best-card-title {
+  min-height: 5rem;
+  font-size: 16px;
+  line-height: 21px;
+  padding-right: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.best-card-price {
+  margin-top: 16px;
+  font-family: "Cormorant Infant", serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.best-card-price-value,
+.best-card-price-value-old {
+  font-family: "Cormorant", serif;
+  font-size: 32px;
+  font-style: normal;
+}
+
+.best-card-price-value {
+  font-weight: 700;
+  margin: 0 16px 0 12px;
+}
+
+.best-card-price-value-old {
+  opacity: 0.2;
+}
+
+.best-card-price-old {
+  position: relative;
+}
+
+.best-card-price-old:before {
+  border-bottom: 1px solid var(--fuchsia);
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50%;
+  transform: rotate(-30deg);
+  right: calc(50% - 30px);
+  top: 0;
+}
+
+.best-card-buttons {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+  align-items: center;
+}
+
+.best-card-btn {
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-horizontal {
+  all: unset;
+}
+
+.best-slider-control {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.best-slider-pagination,
+.services-slider-pagination {
+  font-size: 13px;
+  color: var(--dark-blue);
+}
+
+/*<---Best(END)--->*/
